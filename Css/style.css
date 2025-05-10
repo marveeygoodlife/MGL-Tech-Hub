@@ -1,0 +1,72 @@
+/* Basic reset */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Root style */
+:root {
+    --primary-color:#0B0146;/* Deep Navy Blue */
+    --accent-color:#EB2C39; /* bright Red */
+    --gradient-start:#FA5C4F;/*  */
+    --gradient-end:#B0162F;/*  */
+    --background-color:#F1F1F1;/* Light Grey */
+    --text-color:#FFFFFF;/* White */
+}
+/* Font face */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(/fonts/Lato-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(/fonts/Lato-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+/* General style */
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+body {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    font: normal 300 1.2em / 1.5 'Lato', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    height: auto;
+    width: 100vw;
+}
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 10px;
+}
+/* Main styles */
