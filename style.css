@@ -142,7 +142,7 @@ header {
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem .7rem;
     transition: var(--text-color);
  }
  .links a:visited {
@@ -165,7 +165,7 @@ text-decoration: underline;
     transition: var(--transition);
  }
  .show-links {
-    height: 10rem;
+    height: 12.5rem;
  }
  ul li {
     list-style-type: none;
