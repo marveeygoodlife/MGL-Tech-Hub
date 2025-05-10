@@ -108,8 +108,9 @@ header {
     height: auto;
     width: 100%;
 }
+ 
 /* navigation style */
- nav {
+ nav, footer {
     background-color: var(--clr-white);
     box-shadow: var(--light-shadow);
  }
@@ -158,9 +159,6 @@ text-decoration: underline;
  .links a:active {
     color: var(--clr-primary-1);
  }
- .social-icons {
-    display: none;
- }
  .links {
     height:0;
     overflow: hidden;
@@ -172,7 +170,51 @@ text-decoration: underline;
  ul li {
     list-style-type: none;
  }
- /* social icons */
+  /* social icons */
+ .social-icons {
+    display: none;
+ }
+/* Main styles */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-primary-10);
+    padding: 60px 0;
+    margin-bottom: 5rem;
+    transition: var(--transition);
+    text-align: center;
+}
+.form:hover {
+    display: block;
+    box-shadow: var(--dark-shadow);
+   transform:  scale(1.05);
+}
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: auto;
+}
+.btn {
+    display: inline-block;
+   background-color: rgb(40, 60, 80);
+    color: var(--clr-white);
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    outline: none;
+    transition: var(--transition);
+}
+ .btn:hover {
+    transform: scale(1.10);
+    box-shadow: var(--light-shadow);
+    background-color: var(--clr-grey-3);
+    color: var(--clr-primary-10);
+ }
+ 
+
  /* footer */
 footer {
     position: static;
@@ -181,20 +223,50 @@ footer {
     width: 100vw;
     padding: 10px;
 }
-/* Main styles */
 
-
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  .hero {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
 /* media queries */
+
+  
+
 @media screen and (min-width: 800px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 2.3rem;
+      }
+      h3 {
+        font-size: 1.75rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      body {
+        font-size: 1rem;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        line-height: 1;
+      }
+     
+    p {
+        font-size: 1.2rem;
     }
-    .logo {
-        float: left;
-    }
+    
     div.nav-center {
-        max-width: 1170px;
-        margin: 0 auto;
+         margin: 0 auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -234,3 +306,9 @@ footer {
         color: var(--clr-primary-7);
     }
 }
+@media screen and (min-width: 992px) {
+    .hero {
+      width: 95vw;
+    }
+    
+  }
