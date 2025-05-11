@@ -1,5 +1,8 @@
 
-/* FORM STYLE */
+
+:root{
+
+}/* FORM STYLE */
 form#myform {
     border-radius: 5px;
      max-width: 600px;
@@ -16,6 +19,7 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    height: 35px;
  }
 #connect {
     padding: .6em;
@@ -101,18 +105,7 @@ ul.terms   {
     display: inline-block;
     flex-direction: column;
 }
-/*======A STYLE=====*/
-/* a:link {
-    color: var(--links);
-    text-decoration: none;
-}
-a:visited {
-    color: var(--links);
-}
-a:hover {
-    color: var(--Icons);
-    text-decoration: underline   ;
-} *//* =====A STYLE END========== */
+
 .owner {
     width: 100%;
 }
@@ -124,6 +117,7 @@ select {
     background-color: #fff;
     border: 1px solid #ccc;
     color: #333;
+    height: 35px;
  }
  select option {
     background-color: #333;
@@ -143,9 +137,11 @@ span {
 .mtop {
     margin-top: 0.9em;
 }
- button.formbtn {
+/*  button.formbtn {
     margin:1rem  auto;
+    background-color: rgb(40, 60, 80);
     display: block;
+    color: white;
     width: 50%;
     padding: .4em;
     border-radius: 4px;
@@ -155,10 +151,11 @@ span {
  }
  button.formbtn:hover {
     border-color: #1E2A38;
-    background-color: #87CEEB;
-    color: #1E2A38;
-    transform: scaleX(1.20);
- }
+    box-shadow: var(--light-shadow);
+    background-color: var(--clr-grey-3);
+    color: var(--clr-primary-10);
+    transform: scale(1.10);
+ } */
  #flexlabel {
     font-size: .65em;
     margin-top: 1rem;

@@ -195,19 +195,19 @@ text-decoration: underline;
     max-width: var(--max-width);
     margin: auto;
 }
-.btn {
+button {
     display: inline-block;
    background-color: rgb(40, 60, 80);
     color: var(--clr-white);
     font-size: 1rem;
-    padding: 0.8rem 1.2rem;
+    padding: 0.5rem 1.2rem;
     margin-top: 1rem;
     border-radius: 5px;
     text-decoration: none;
     outline: none;
     transition: var(--transition);
 }
- .btn:hover {
+ button:hover {
     transform: scale(1.10);
     box-shadow: var(--light-shadow);
     background-color: var(--clr-grey-3);
@@ -221,7 +221,19 @@ footer {
     bottom: 0;
     left: 0;
     width: 100vw;
-    padding: 10px;
+    padding:2rem;
+}
+.footer-social-icons {
+    font-size: 1.5rem;
+    display: flex;
+}
+.footer-social-icons a {
+    margin: 0 0.5rem;
+    color: var(--clr-primary-5);
+    transition: var(--transition);
+}
+.footer-social-icons a:hover {
+    color: var(--clr-primary-7);
 }
 
 main {
@@ -292,6 +304,10 @@ main {
     .links a:hover {
         padding: 0;
         background: transparent;
+    }
+    .footer-social-icons {
+        
+        display: none;
     }
     .social-icons {
         font-size: 1.5rem;
