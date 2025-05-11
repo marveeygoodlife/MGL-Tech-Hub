@@ -1,8 +1,4 @@
-
-
-:root{
-
-}/* FORM STYLE */
+ /* FORM STYLE */
 form#myform {
     border-radius: 5px;
      max-width: 600px;
@@ -137,25 +133,7 @@ span {
 .mtop {
     margin-top: 0.9em;
 }
-/*  button.formbtn {
-    margin:1rem  auto;
-    background-color: rgb(40, 60, 80);
-    display: block;
-    color: white;
-    width: 50%;
-    padding: .4em;
-    border-radius: 4px;
-    outline: none;
-    font-size: 1.1rem;
-    transition: border-color .3s ease, transform .3s ease-in-out;
- }
- button.formbtn:hover {
-    border-color: #1E2A38;
-    box-shadow: var(--light-shadow);
-    background-color: var(--clr-grey-3);
-    color: var(--clr-primary-10);
-    transform: scale(1.10);
- } */
+/*  */
  #flexlabel {
     font-size: .65em;
     margin-top: 1rem;
@@ -206,10 +184,7 @@ label#flexlabel, .flexa  {
     }
   /*   input, select, button {
      } */
-    button {
-        margin:2rem  auto;
-        width: 50%;
-    }
+    
     #flexlabel {
 
         font-size: unset;
