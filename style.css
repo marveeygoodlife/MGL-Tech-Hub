@@ -219,6 +219,101 @@ text-decoration: underline;
     color: var(--clr-primary-10);
  }
  
+ /* SECTION REVIEWS STYLES */
+
+
+ article.review {
+     padding: 1.5rem 2rem;
+     border-radius: var(--radius);
+     box-shadow: var(--light-shadow);
+     transition: var(--transition);
+     text-align: center;
+ } 
+ article.review:hover {
+     box-shadow: var(--dark-shadow); 
+ } 
+
+  section.section-container {
+    display: grid;
+    place-items: center;
+    width: 80vw;
+    max-width: var(--fixed-width);
+    margin-bottom: 1.2rem;
+  }
+ .title {
+    text-align: center;
+    margin-bottom: 3rem;
+ }
+ .underline {
+    background-color: var(--background-color);
+    margin-left: auto;
+    margin-right: auto;
+    height: 0.25rem;
+    width: 10rem;
+ }
+ #image-container {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+ }
+ #person-img {
+    width: 150px;
+    height: 150px;
+     
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+ }/* 
+ #img-container::after {
+    font-family: "Lato";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+    position: absolute;
+    display: grid;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    place-items: center;
+    border-radius: 50%;
+    background-color:red;
+    color: var(--clr-white);
+    transform: translateY(25%)
+ }
+ #img-container::before {
+    content: "";
+    width: auto;
+    height:auto;
+    background: var(--clr-primary-5);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.25rem;
+    border-radius: 50%;
+  } */
+  #author {
+    margin-bottom: .25rem;
+  }
+  #job {
+    margin-bottom: .25rem;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: var(--clr-primary-4);
+  }
+  #info 
+  .prev-btn, .next-btn {
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.26rem;
+    cursor: pointer;
+    color: var(--clr-primary-7);
+    margin: 0 0.5rem;
+    transition: var(--transition);
+  }
+ /* SECTION REVIEWS STYLES */
 
  /* footer */
 footer {
